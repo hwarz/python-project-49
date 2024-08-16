@@ -9,13 +9,13 @@ operators = [('+', operator.add), ('-', operator.sub), ('*', operator.mul)]
 def main():
     user_name = welcome_user()
     print('What is the rusult of the expression?')
+
     for i in range(1, 4):
         random_number_1 = str(random.randint(1, 100))
         random_number_2 = str(random.randint(1, 100))
         (random_math, random_operator) = random.choice(operators)
         print(f'Question: {random_number_1} {random_math} {random_number_2}')
         correct_answer = str(random_operator(int(random_number_1), int(random_number_2)))
-        print(correct_answer)
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print('Correct!')
