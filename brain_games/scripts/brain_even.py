@@ -9,7 +9,7 @@ def main():
     user_name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
-    for i in range(1, 4):
+    for i in range(3):
         random_number = str(random.randint(1, 100))
         print(f'Question: {random_number}')
         answer = prompt.string('Your answer: ')
@@ -19,11 +19,11 @@ def main():
             correct_answer = 'no'
         if answer == correct_answer:
             print('Correct!')
-        if i == 3:
-            print(f'Congratulations, {user_name}')
-            break
+            if i == 2:
+                print(f'Congratulations, {user_name}!')
+                break
         if answer != correct_answer:
-            print(f'\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'. Let\'s try again, {user_name}!')
+            print(f'\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'.\nLet\'s try again, {user_name}!')
             break
 
 if __name__ == '__main__':

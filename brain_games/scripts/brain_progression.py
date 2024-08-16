@@ -2,20 +2,25 @@
 import random
 import prompt
 import operator
+import math
 
 from brain_games.cli import welcome_user
-operators = [('+', operator.add), ('-', operator.sub), ('*', operator.mul)]
 
 def main():
     user_name = welcome_user()
-    print('What is the rusult of the expression?')
+    print('What number is missing in the progression?')
 
     for i in range(3):
-        random_number_1 = str(random.randint(1, 100))
-        random_number_2 = str(random.randint(1, 100))
-        (random_math, random_operator) = random.choice(operators)
-        print(f'Question: {random_number_1} {random_math} {random_number_2}')
-        correct_answer = str(random_operator(int(random_number_1), int(random_number_2)))
+        progression_length = random.randint(5, 11)
+        start = random.randint(1, 100) 
+        diff = random.randint(1, 20)
+        progression = [start + j * diff for j in range(progression_length)]
+        hidden_position = random.randint(0, progression_length - 1)
+        correct_answer = str(progression[hidden_position])
+        print(correct_answer)
+        progression[hidden_position] = '..'
+        progression = [str(_) for _ in progression]
+        print(f'Question: {" ".join(progression)}')
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print('Correct!')
