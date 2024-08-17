@@ -8,7 +8,7 @@ operators = [('+', operator.add), ('-', operator.sub), ('*', operator.mul)]
 
 def main():
     user_name = welcome_user()
-    print('What is the rusult of the expression?')
+    print('What is the result of the expression?')
 
     for i in range(3):
         random_number_1 = str(random.randint(1, 100))
