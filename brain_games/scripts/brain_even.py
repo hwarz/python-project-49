@@ -13,9 +13,9 @@ def main():
         random_number = str(random.randint(1, 100))
         print(f'Question: {random_number}')
         answer = prompt.string('Your answer: ')
-        if int(random_number)%2 == 0:
-            correct_answer = 'yes' 
-        if int(random_number)%2 == 1:
+        if int(random_number) % 2 == 0:
+            correct_answer = 'yes'
+        else:
             correct_answer = 'no'
         if answer == correct_answer:
             print('Correct!')
@@ -23,8 +23,10 @@ def main():
                 print(f'Congratulations, {user_name}!')
                 break
         if answer != correct_answer:
-            print(f'\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'.\nLet\'s try again, {user_name}!')
+            print(f'\'{answer}\' is wrong answer ;(. Correct answer was'
+                  f' \'{correct_answer}\'.\nLet\'s try again, {user_name}!')
             break
+
 
 if __name__ == '__main__':
     main()
