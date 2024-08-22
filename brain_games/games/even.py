@@ -2,9 +2,10 @@ def even_gm():
     import random
     import prompt
     from brain_games.common_logic import common_code
-        
-    WhatToDoTextEven = 'Answer "yes" if the number is even, otherwise answer "no".'
-    
+
+    WhatToDoTextEven = '''Answer "yes" if the number is even,
+    otherwise answer "no".'''
+
     def even_game_code():
         random_number = str(random.randint(1, 100))
         print(f'Question: {random_number}')

@@ -2,7 +2,7 @@ def progression_gm():
     import random
     import prompt
     from brain_games.common_logic import common_code
-        
+
     WhatToDoTextProgression = 'What number is missing in the progression?'
 
     def progression_game_code():

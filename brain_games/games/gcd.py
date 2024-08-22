@@ -3,7 +3,7 @@ def gcd_gm():
     import prompt
     import math
     from brain_games.common_logic import common_code
-        
+
     WhatToDoTextEven = 'Find the greatest common divisor of given numbers.'
 
     def gcd_game_code():
@@ -13,7 +13,7 @@ def gcd_gm():
         correct_answer = str(
             math.gcd(int(random_number_1), int(random_number_2))
         )
-        answer = prompt.string('Your answer: ')  
+        answer = prompt.string('Your answer: ')
         return answer, correct_answer
 
     common_code(gcd_game_code, WhatToDoTextEven)
