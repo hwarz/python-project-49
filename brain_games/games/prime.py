@@ -3,8 +3,8 @@ def prime_gm():
     import prompt
     from brain_games.common_logic import common_code
 
-    WhatToDoTextPrime = '''Answer "yes" if given number is prime.
-    Otherwise answer "no".'''
+    WhatToDoTextPrime = \
+        'Answer "yes" if given number is prime. Otherwise answer "no".'
 
     def prime_game_code():
         random_number = str(random.randint(1, 100))
