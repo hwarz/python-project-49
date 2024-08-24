@@ -45,7 +45,7 @@ The first project introduces the basic steps: installing the language, setting u
 * [Installation](#installation)
 * [Usage](#usage)
 * [Demo](#demo)
-  * [Brain Even](#Brain Even:)
+  * [Brain Even](#brain-even)
   * [Brain Calculator](#brain-calc)
   * [Brain GCD](#brain-gcd)
   * [Brain Progression](#brain-progression)
@@ -93,6 +93,7 @@ It remains to move to the directory and install the package:
 ```
 ### Demo
 #### Brain Even:
+`brain-even`
 The user is shown a random number. And he has to answer yes if the number is even, or no if it is odd:
 **Examples:**
 ```bash
@@ -108,7 +109,7 @@ Correct!
 ```
 [![asciicast](https://asciinema.org/a/yy8f2inVomXQVXpGFL4hpbr34.svg)](https://asciinema.org/a/yy8f2inVomXQVXpGFL4hpbr34)
 
-#### :video_game: Brain Calculator:
+#### Brain Calculator:
 `brain-calc`
 
 The user is shown a random mathematical expression, such as 87 + 48, which must be calculated and write down the correct answer.
