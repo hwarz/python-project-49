@@ -111,9 +111,6 @@ Question: 15
 >> Your answer: no
 Correct!
 ```
-
-[![asciicast](https://asciinema.org/a/B0mMah2NZIrW45W2PkxFahszQ.svg)](https://asciinema.org/a/B0mMah2NZIrW45W2PkxFahszQ)
-
 [![asciicast](https://asciinema.org/a/yy8f2inVomXQVXpGFL4hpbr34.svg)](https://asciinema.org/a/yy8f2inVomXQVXpGFL4hpbr34)
 
 #### :video_game: Brain Calculator:
