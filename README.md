@@ -171,7 +171,7 @@ Question: 3 26 .. 72 95 118 141 164 187
 Correct!
 ```
 
-[![asciicast](https://asciinema.org/a/N5pDMigEgLicolbdmKJALi04B.svg)](https://asciinema.org/a/N5pDMigEgLicolbdmKJALi04B)
+[![asciicast](https://asciinema.org/a/2rz1kwFwNtPljS638duAiTNXX.svg)](https://asciinema.org/a/2rz1kwFwNtPljS638duAiTNXX)
 
 #### :video_game: Brain Prime:
 `brain-prime`
@@ -191,7 +191,7 @@ Question: 67
 Correct!
 ```
 
-[![asciicast](https://asciinema.org/a/KtIK5g2W0p7zbl2eqJ7OTlcdi.svg)](https://asciinema.org/a/KtIK5g2W0p7zbl2eqJ7OTlcdi)
+[![asciicast](https://asciinema.org/a/HtlDeQjczIjLxiHlE5A12P1wj.svg)](https://asciinema.org/a/HtlDeQjczIjLxiHlE5A12P1wj)
 
 ___
 
