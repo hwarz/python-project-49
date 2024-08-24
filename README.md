@@ -9,12 +9,12 @@
 
 ## Built With
 
-Major languages/frameworks/libraries used to bootstrap the project.
+Languages/frameworks/libraries used to bootstrap the project.
 
 [![](https://img.shields.io/badge/language-python-blue)](https://github.com/topics/python) [![](https://img.shields.io/badge/library-prompt-%23EE7D0D)](https://github.com/topics/prompt) [![](https://img.shields.io/badge/library-random-black)](https://github.com/topics/random) [![](https://img.shields.io/badge/library-math-success)](https://github.com/topics/math)
 
 ## Dependencies
-List of dependencies, without which the project code will not work correctly:
+Dependencies for correct working of the code:
 
 - python = "^3.9"
 - prompt = "^0.4.1"
@@ -38,17 +38,12 @@ You can open it with this commands:
 >> brain-progression
 >> brain-prime
 ```
-The first project is simultaneously the first full-fledged program outside of the Hexlet Environment. It introduces the basic steps needed to start any new project: installing the language (interpreter), setting up the environment (operating system, editor, linters), connecting additional libraries, creating a git repository. At this stage begins the in-depth work with the terminal. You will be introduced to Poetry, the utility for project management: installing and upgrading additional libraries, publishing packages, and much more. Here also comes the formation of the right engineering culture. One of the first tasks in the setup is to connect a linter (flake8), which automatically monitors the code style and finds potential errors. Another powerful element of real-world development is continuous integration (CI). Such systems are an integral part of any professional development. In Hexlet projects, continuous integration is connected to every project. Among the many systems, Github Actions is chosen as a free and Github-integrated build system.
-
-The main issue in the project is the architecture. The architecture relies on basic principles of code organization: isolating side-effects, creating the right abstraction barriers (high modularity). A lot of questions arise here: "who is responsible for what?", "who interacts with the user?" "how does the game run?" and more. The architecture is a lot of work to do, even if you have some real development experience.
+The first project introduces the basic steps: installing the language, setting up the environment (operating system, editor, linters), connecting additional libraries, creating a git repository. The utility Poetry is needed for: installing and upgrading additional libraries, publishing packages, and much more. The linter (flake8) automatically monitors the code style and finds potential errors. Another powerful element of real-world development is continuous integration (CI). Such systems are an integral part of any professional development. Github Actions is chosen as a free and Github-integrated build system. The main issue in the project is the architecture. Games have a common order of execution: ask a question, get an answer, compare the answer, and so on. This logic was moved to one place and reused inside specific games to eliminate code duplication. 
 
 ### Summary
 * [Description](#description)
 * [Installation](#installation)
-  * [Python](#python)
-  * [Poetry](#poetry)
-  * [Project package](#project-package)
-* [Usage](#usage)
+  * [Usage](#usage)
   * [Demo](#demo)
   * [Brain Even](#video_game-brain-even)
   * [Brain Calculator](#video_game-brain-calc)
@@ -202,16 +197,13 @@ ___
 List of dev-dependencies:
 - flake8 = "^4.0.1"
 
-### Project Organization
-
+### Project Structure
 ```bash
 .
 ├── brain_games
 │   ├── __init__.py
 │   ├── cli.py
-│   ├── engine
-│   │   ├── __init__.py
-│   │   └── game_engine.py
+│   ├── common_logic.py
 │   ├── games
 │   │   ├── __init__.py
 │   │   ├── calc.py
@@ -227,10 +219,13 @@ List of dev-dependencies:
 │       ├── brain_gcd.py
 │       ├── brain_progression.py
 │       └── brain_prime.py
+├── dist
+    ├── hexlet_code-0.1.0-py3-none-any.whl
+    ├── hexlet_code-0.1.0.tar.gz 
 ├── Makefile
-├── poetry.lock
-├── pyproject.toml
 ├── README.md
+├── pyproject.toml
+├── poetry.lock
 └── setup.cfg
 ```
 
