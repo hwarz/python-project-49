@@ -131,7 +131,7 @@ Question: 87 + 48
 Correct!
 ```
 
-[![asciicast](https://asciinema.org/a/ZkAz7e25wilITQfKBDLjFrqzk.svg)](https://asciinema.org/a/ZkAz7e25wilITQfKBDLjFrqzk)
+[![asciicast](https://asciinema.org/a/6YfLN2LNdCYUgqN9J4JPMULdp.svg)](https://asciinema.org/a/6YfLN2LNdCYUgqN9J4JPMULdp)
 
 #### :video_game: Brain GCD:
 `brain-gcd`
