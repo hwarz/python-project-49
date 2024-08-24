@@ -110,10 +110,10 @@ Correct!
 [![asciicast](https://asciinema.org/a/yy8f2inVomXQVXpGFL4hpbr34.svg)](https://asciinema.org/a/yy8f2inVomXQVXpGFL4hpbr34)
 
 #### Brain Calculator
+
 `brain-calc`
 
 The user is shown a random mathematical expression, such as 87 + 48, which must be calculated and write down the correct answer.
-
 **Examples**
 ```bash
 What is the result of the expression?
