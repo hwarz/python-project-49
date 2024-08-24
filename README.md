@@ -68,8 +68,8 @@ Before installing the package, you need to make sure that you have Python versio
 Python 3.9.0+
 ```
 ### Poetry
-In the introductory section of the Poetry documentation, you will find commands for installing the program into your operating system:
-https://python-poetry.org/docs/#installing-with-pipx .The project uses the Poetry manager. Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you. Poetry provides a custom installer that will install poetry isolated from the rest of your system by vendorizing its dependencies. This is the recommended way of installing poetry.
+The command for installing the program into your operating system:
+https://python-poetry.org/docs/#installing-with-pipx . The project uses the Poetry manager. Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you. Poetry provides a custom installer that will install poetry isolated from the rest of your system by vendorizing its dependencies. This is the recommended way of installing poetry.
 
 Once Poetry is installed and in your $PATH, you can execute the following:
 ```bash
@@ -231,9 +231,15 @@ List of dev-dependencies:
 
 ### Useful commands
 
-The commands most used in development are listed in the Makefile:
+The commands listed in the Makefile:
 
 <dl>
+    <dt><code>make install</code></dt>
+    <dd>Installing Poetry.</dd>
+    <dt><code>make brain-games</code></dt>
+    <dd>Installing ther game.</dd> 
+    <dt><code>make publish</code></dt>
+    <dd>Installing a poetry publish.</dd>
     <dt><code>make package-install</code></dt>
     <dd>Installing a package in the user environment.</dd>
     <dt><code>make build</code></dt>
