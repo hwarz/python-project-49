@@ -6,244 +6,249 @@
 
   <p align="center">
     A Hexlet Students First Python Project
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
-</div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
 
+## Built With
+
+Major languages/frameworks/libraries used to bootstrap the project.
+
+[![](https://img.shields.io/badge/language-python-blue)](https://github.com/topics/python) [![](https://img.shields.io/badge/library-prompt-%23EE7D0D)](https://github.com/topics/prompt) [![](https://img.shields.io/badge/library-random-black)](https://github.com/topics/random) [![](https://img.shields.io/badge/library-math-success)](https://github.com/topics/math)
+
+## Dependencies
+List of dependencies, without which the project code will not work correctly:
+
+- python = "^3.9"
+- prompt = "^0.4.1"
+
+## Description
+
+**"Brain Games"** is a set of five console games. After three correct answers, the game is considered to be over. The wrong answer ends the game and offers to play it again.
+
+*Games:*
+- Brain Even - Answer "yes" if the number is even, otherwise answer "no"
+- Brain Calculator - Answer what is the result of the expression.
+- Brain GCD - Answer what is the greatest common divisor of given numbers.
+- Brain Progression - Answer what number is missing in the progression.
+- Brain Prime - Answer "yes" if given number is prime, otherwise answer "no".
+
+You can open it with this commands:
+```bash
+>> brain-even
+>> brain-calc
+>> brain-gcd
+>> brain-progression
+>> brain-prime
+```
+The first project is simultaneously the first full-fledged program outside of the Hexlet Environment. It introduces the basic steps needed to start any new project: installing the language (interpreter), setting up the environment (operating system, editor, linters), connecting additional libraries, creating a git repository. At this stage begins the in-depth work with the terminal. You will be introduced to Poetry, the utility for project management: installing and upgrading additional libraries, publishing packages, and much more. Here also comes the formation of the right engineering culture. One of the first tasks in the setup is to connect a linter (flake8), which automatically monitors the code style and finds potential errors. Another powerful element of real-world development is continuous integration (CI). Such systems are an integral part of any professional development. In Hexlet projects, continuous integration is connected to every project. Among the many systems, Github Actions is chosen as a free and Github-integrated build system.
+
+The main issue in the project is the architecture. The architecture relies on basic principles of code organization: isolating side-effects, creating the right abstraction barriers (high modularity). A lot of questions arise here: "who is responsible for what?", "who interacts with the user?" "how does the game run?" and more. The architecture is a lot of work to do, even if you have some real development experience.
+
+### Summary
+* [Description](#description)
+* [Installation](#installation)
+  * [Python](#python)
+  * [Poetry](#poetry)
+  * [Project package](#project-package)
+* [Usage](#usage)
+  * [Demo](#demo)
+  * [Brain Even](#video_game-brain-even)
+  * [Brain Calculator](#video_game-brain-calc)
+  * [Brain GCD](#video_game-brain-gcd)
+  * [Brain Progression](#video_game-brain-progression)
+  * [Brain Prime](#video_game-brain-prime)
+* [Development](#development)
+  * [Dev Dependencies](#dev-dependencies)
+  * [Project Organization](#project-organization)
+  * [Useful commands](#useful-commands)
+
+___
+
+## Installation
+
+### Python
+Before installing the package, you need to make sure that you have Python version 3.9 or higher installed:
+
+```bash
+# Windows, Ubuntu, MacOS:
+>> python --version # or python -V
+Python 3.9.0+
+```
+### Poetry
+In the introductory section of the Poetry documentation, you will find commands for installing the program into your operating system:
+https://python-poetry.org/docs/#installing-with-pipx .The project uses the Poetry manager. Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you. Poetry provides a custom installer that will install poetry isolated from the rest of your system by vendorizing its dependencies. This is the recommended way of installing poetry.
+
+Once Poetry is installed and in your $PATH, you can execute the following:
+```bash
+>> poetry --version
+```
+### Project package
+To work with the package, you need to clone the repository to your computer. This is done using the ```git clone``` command. Clone the project on the command line:
+```bash
+# clone via SSH:
+>> git clone git@github.com:hwarz/python-project-49.git
+```
+
+It remains to move to the directory and install the package:
+
+```bash
+>> cd python-project-49
+>> poetry build
+>> python3 -m pip install --user dist/*.whl
+# If you have previously installed a package and want to update it, use the following command:
+# >> python3 -m pip install --user --force-reinstall dist/*.whl
+```
+### Demo
+#### Brain Even:
+The user is shown a random number. And he has to answer yes if the number is even, or no if it is odd:
+**Examples:**
+```bash
+Answer "yes" if the number is even, otherwise answer "no".
+Question: 15
+>> Your answer: yes
+'yes' is wrong answer ;(. Correct answer was 'no'.
+
+Answer "yes" if the number is even, otherwise answer "no".
+Question: 15
+>> Your answer: no
+Correct!
+```
 
+[![asciicast](https://asciinema.org/a/B0mMah2NZIrW45W2PkxFahszQ.svg)](https://asciinema.org/a/B0mMah2NZIrW45W2PkxFahszQ)
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Top contributors:
-
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
-</a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+#### :video_game: Brain Calculator:
+`brain-calc`
+
+The user is shown a random mathematical expression, such as 87 + 48, which must be calculated and write down the correct answer.
+
+**Examples:**
+```bash
+What is the result of the expression?
+Question: 87 + 48
+>> Your answer: 126
+'126' is wrong answer ;(. Correct answer was '135'.
+
+What is the result of the expression?
+Question: 87 + 48
+>> Your answer: 135
+Correct!
+```
+
+[![asciicast](https://asciinema.org/a/ZkAz7e25wilITQfKBDLjFrqzk.svg)](https://asciinema.org/a/ZkAz7e25wilITQfKBDLjFrqzk)
+
+#### :video_game: Brain GCD:
+`brain-gcd`
+
+The user is shown two random numbers, for example 25 and 50. The user must calculate and enter the greatest common divisor of these numbers.
+
+**Examples:**
+```bash
+Find the greatest common divisor of given numbers.
+Question: 25 50
+>> Your answer: 5
+'5' is wrong answer ;(. Correct answer was '25'.
+
+Find the greatest common divisor of given numbers.
+Question: 25 50
+>> Your answer: 25
+Correct!
+```
+
+[![asciicast](https://asciinema.org/a/MfUOP93EXwHjQCp9pZx8qtJSz.svg)](https://asciinema.org/a/MfUOP93EXwHjQCp9pZx8qtJSz)
+
+#### :video_game: Brain Progression:
+`brain-progression`
+
+The user is shown a series of numbers with a missing number, forming an arithmetic progression. The player has to determine this number.
+
+**Examples:**
+```bash
+What number is missing in the progression?
+Question: 3 26 .. 72 95 118 141 164 187
+>> Your answer: 43
+'43' is wrong answer ;(. Correct answer was '49'.
+
+What number is missing in the progression?
+Question: 3 26 .. 72 95 118 141 164 187
+>> Your answer: 49
+Correct!
+```
+
+[![asciicast](https://asciinema.org/a/N5pDMigEgLicolbdmKJALi04B.svg)](https://asciinema.org/a/N5pDMigEgLicolbdmKJALi04B)
+
+#### :video_game: Brain Prime:
+`brain-prime`
+
+The user is shown a random number. And he needs to answer yes if the number is prime, or no if it is composite:
+
+**Examples:**
+```bash
+Answer "yes" if given number is prime. Otherwise answer "no".
+Question: 67
+>> Your answer: no
+'no' is wrong answer ;(. Correct answer was 'yes'.
+
+Answer "yes" if given number is prime. Otherwise answer "no".
+Question: 67
+>> Your answer: yes
+Correct!
+```
+
+[![asciicast](https://asciinema.org/a/KtIK5g2W0p7zbl2eqJ7OTlcdi.svg)](https://asciinema.org/a/KtIK5g2W0p7zbl2eqJ7OTlcdi)
+
+___
+
+## Development
+
+### Dev Dependencies
+
+List of dev-dependencies:
+- flake8 = "^4.0.1"
+
+### Project Organization
+
+```bash
+.
+├── brain_games
+│   ├── __init__.py
+│   ├── cli.py
+│   ├── engine
+│   │   ├── __init__.py
+│   │   └── game_engine.py
+│   ├── games
+│   │   ├── __init__.py
+│   │   ├── calc.py
+│   │   ├── even.py
+│   │   ├── gcd.py
+│   │   ├── progression.py
+│   │   └── prime.py
+│   └── scripts
+│       ├── __init__.py
+│       ├── brain_games.py
+│       ├── brain_calc.py
+│       ├── brain_even.py
+│       ├── brain_gcd.py
+│       ├── brain_progression.py
+│       └── brain_prime.py
+├── Makefile
+├── poetry.lock
+├── pyproject.toml
+├── README.md
+└── setup.cfg
+```
+
+### Useful commands
+
+The commands most used in development are listed in the Makefile:
+
+<dl>
+    <dt><code>make package-install</code></dt>
+    <dd>Installing a package in the user environment.</dd>
+    <dt><code>make build</code></dt>
+    <dd>Building the distribution of he Poetry package.</dd>
+    <dt><code>make package-force-reinstall</code></dt>
+    <dd>Reinstalling the package in the user environment.</dd>
+    <dt><code>make lint</code></dt>
+    <dd>Checking code with linter.</dd>
+</dl>
+___
+
+:man_technologist: Author: [@Vladimir Arshba](https://github.com/hwarz/python-project-49)
