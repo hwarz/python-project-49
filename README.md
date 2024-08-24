@@ -43,9 +43,9 @@ The first project introduces the basic steps: installing the language, setting u
 ### Summary
 * [Description](#description)
 * [Installation](#installation)
-  * [Usage](#usage)
-  * [Demo](#demo)
-  * [Brain Even](#brain-even)
+* [Usage](#usage)
+* [Demo](#demo)
+  * [Brain Even](#Brain Even:)
   * [Brain Calculator](#brain-calc)
   * [Brain GCD](#brain-gcd)
   * [Brain Progression](#brain-progression)
