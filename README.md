@@ -92,6 +92,7 @@ It remains to move to the directory and install the package:
 ```
 ### Demo
 #### Brain Even
+
 `brain-even`
 The user is shown a random number. And he has to answer "yes" if the number is even, or "no" if it is odd:
 **Examples**
@@ -113,7 +114,7 @@ Correct!
 
 The user is shown a random mathematical expression, such as 87 + 48, which must be calculated and write down the correct answer.
 
-**Examples:**
+**Examples**
 ```bash
 What is the result of the expression?
 Question: 87 + 48
