@@ -113,7 +113,7 @@ Correct!
 ```
 
 [![asciicast](https://asciinema.org/a/B0mMah2NZIrW45W2PkxFahszQ.svg)](https://asciinema.org/a/B0mMah2NZIrW45W2PkxFahszQ)
-[![asciicast](https://asciinema.org/connect/6dd76456-d373-4d09-8c39-483b56505bc6)](https://asciinema.org/connect/6dd76456-d373-4d09-8c39-483b56505bc6)
+[![asciicast](https://asciinema.org/a/6dd76456-d373-4d09-8c39-483b56505bc6.svg)](https://asciinema.org/a/6dd76456-d373-4d09-8c39-483b56505bc6)
 
 #### :video_game: Brain Calculator:
 `brain-calc`
