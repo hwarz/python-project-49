@@ -45,15 +45,14 @@ The first project introduces the basic steps: installing the language, setting u
 * [Installation](#installation)
 * [Usage](#usage)
 * [Demo](#demo)
-  * [Brain Even](#brain-even)
-  * [Brain Calculator](#brain-calc)
-  * [Brain GCD](#brain-gcd)
-  * [Brain Progression](#brain-progression)
-  * [Brain Prime](#brain-prime)
-* [Development](#development)
-  * [Dev Dependencies](#dev-dependencies)
-  * [Project Organization](#project-organization)
-  * [Useful commands](#useful-commands)
+* [Brain Even](#brain-even)
+* [Brain Calculator](#brain-calc)
+* [Brain GCD](#brain-gcd)
+* [Brain Progression](#brain-progression)
+* [Brain Prime](#brain-prime)
+* [Dev Dependencies](#dev-dependencies)
+* [Project Structure](#project-structure)
+* [Useful commands](#useful-commands)
 
 ___
 
@@ -92,10 +91,10 @@ It remains to move to the directory and install the package:
 # >> python3 -m pip install --user --force-reinstall dist/*.whl
 ```
 ### Demo
-#### Brain Even:
+#### Brain Even
 `brain-even`
-The user is shown a random number. And he has to answer yes if the number is even, or no if it is odd:
-**Examples:**
+The user is shown a random number. And he has to answer "yes" if the number is even, or "no" if it is odd:
+**Examples**
 ```bash
 Answer "yes" if the number is even, otherwise answer "no".
 Question: 15
@@ -109,7 +108,7 @@ Correct!
 ```
 [![asciicast](https://asciinema.org/a/yy8f2inVomXQVXpGFL4hpbr34.svg)](https://asciinema.org/a/yy8f2inVomXQVXpGFL4hpbr34)
 
-#### Brain Calculator:
+#### Brain Calculator
 `brain-calc`
 
 The user is shown a random mathematical expression, such as 87 + 48, which must be calculated and write down the correct answer.
@@ -129,12 +128,12 @@ Correct!
 
 [![asciicast](https://asciinema.org/a/6YfLN2LNdCYUgqN9J4JPMULdp.svg)](https://asciinema.org/a/6YfLN2LNdCYUgqN9J4JPMULdp)
 
-#### :video_game: Brain GCD:
+#### Brain GCD
 `brain-gcd`
 
-The user is shown two random numbers, for example 25 and 50. The user must calculate and enter the greatest common divisor of these numbers.
+The user is shown two random integer numbers. The user must enter the greatest common divisor of these numbers.
 
-**Examples:**
+**Examples**
 ```bash
 Find the greatest common divisor of given numbers.
 Question: 25 50
@@ -146,15 +145,14 @@ Question: 25 50
 >> Your answer: 25
 Correct!
 ```
-
 [![asciicast](https://asciinema.org/a/oIAdKA0EdrsfnhEsgPx0qSMhE.svg)](https://asciinema.org/a/oIAdKA0EdrsfnhEsgPx0qSMhE)
 
-#### :video_game: Brain Progression:
+#### Brain Progression
 `brain-progression`
 
-The user is shown a series of numbers with a missing number, forming an arithmetic progression. The player has to determine this number.
+The user is shown a arithmetic progression with a missing number. The player has to determine this number.
 
-**Examples:**
+**Examples**
 ```bash
 What number is missing in the progression?
 Question: 3 26 .. 72 95 118 141 164 187
@@ -166,15 +164,14 @@ Question: 3 26 .. 72 95 118 141 164 187
 >> Your answer: 49
 Correct!
 ```
-
 [![asciicast](https://asciinema.org/a/2rz1kwFwNtPljS638duAiTNXX.svg)](https://asciinema.org/a/2rz1kwFwNtPljS638duAiTNXX)
 
-#### :video_game: Brain Prime:
+#### Brain Prime
 `brain-prime`
 
-The user is shown a random number. And he needs to answer yes if the number is prime, or no if it is composite:
+The user is shown a random number. And he needs to answer "yes" if the number is prime, or "no" if it is not prime.
 
-**Examples:**
+**Examples**
 ```bash
 Answer "yes" if given number is prime. Otherwise answer "no".
 Question: 67
@@ -186,19 +183,16 @@ Question: 67
 >> Your answer: yes
 Correct!
 ```
-
 [![asciicast](https://asciinema.org/a/HtlDeQjczIjLxiHlE5A12P1wj.svg)](https://asciinema.org/a/HtlDeQjczIjLxiHlE5A12P1wj)
-
 ___
 
-## Development
-
 ### Dev Dependencies
-
+`dev-dependencies`
 List of dev-dependencies:
 - flake8 = "^4.0.1"
 
 ### Project Structure
+`project-structure`
 ```bash
 .
 ├── brain_games
@@ -231,7 +225,7 @@ List of dev-dependencies:
 ```
 
 ### Useful commands
-
+`useful-commands`
 The commands listed in the Makefile:
 
 <dl>
