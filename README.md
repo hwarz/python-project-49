@@ -151,7 +151,7 @@ Question: 25 50
 Correct!
 ```
 
-[![asciicast](https://asciinema.org/a/MfUOP93EXwHjQCp9pZx8qtJSz.svg)](https://asciinema.org/a/MfUOP93EXwHjQCp9pZx8qtJSz)
+[![asciicast](https://asciinema.org/a/oIAdKA0EdrsfnhEsgPx0qSMhE.svg)](https://asciinema.org/a/oIAdKA0EdrsfnhEsgPx0qSMhE)
 
 #### :video_game: Brain Progression:
 `brain-progression`
