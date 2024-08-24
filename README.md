@@ -44,7 +44,6 @@ The first project introduces the basic steps: installing the language, setting u
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Demo](#demo)
 * [Brain Even](#brain-even)
 * [Brain Calculator](#brain-calc)
 * [Brain GCD](#brain-gcd)
@@ -90,10 +89,11 @@ It remains to move to the directory and install the package:
 # If you have previously installed a package and want to update it, use the following command:
 # >> python3 -m pip install --user --force-reinstall dist/*.whl
 ```
-### Demo
+
 #### Brain Even
 
 `brain-even`
+
 The user is shown a random number. And he has to answer "yes" if the number is even, or "no" if it is odd:
 **Examples**
 ```bash
