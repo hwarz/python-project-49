@@ -1,2 +1,4 @@
-.venv/
+/python-project-49/.venv/
+/python-project-49/dist/
+/__pycahche__/
 
