@@ -1,4 +1,4 @@
-/.venv/
-/dist/
-/__pycahche__/
-/dist2/
+/python-project-49/.venv/
+/python-project-49/dist/
+/python-project-49/brain_games/scripts/__pycache__
+/python-project-49/brain_games/scripts/__pycache__2
